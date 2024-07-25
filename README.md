@@ -1,27 +1,58 @@
-# AngularChart
+# Angular Chart Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+This project demonstrates the usage of Angular with Angular Material, Tailwind CSS, and Chart.js.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
-## Code scaffolding
+## Introduction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This Angular project showcases various types of charts using Chart.js, integrated with Angular Material for UI components and Tailwind CSS for styling.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Display of various chart types including Pie, Bar, Polar Area, Radar, Line, Scatter, Bubble, and Doughnut.
+- Integration of Angular Material for navigation and UI elements.
+- Responsive design using Tailwind CSS utilities.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular
+- Angular Material
+- Tailwind CSS
+- Chart.js
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run this project locally, follow these steps:
 
-## Further help
+1. Clone the repository: `git clone https://github.com/yarob-alrifai/angular-chart.git`
+2. Navigate to the project directory: `cd angular-chart`
+3. Install dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open your browser and navigate to `http://localhost:4200/`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Usage
+
+After following the installation steps, you can view the charts by navigating to different routes specified in the application (e.g., `/pie`, `/bar`, `/polar`, etc.).
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to enhance the project, feel free to open a pull request or submit an issue in the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+- **Yarob Alrifai**
+- Email: Yalrifai41@gmail.com
