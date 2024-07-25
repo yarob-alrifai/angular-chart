@@ -1,9 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Sale } from '../models/sale';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
+  loadSales() {
+    return this.http.get<Sale[]>('http://localhost:3000/sales');
+  }
 }
