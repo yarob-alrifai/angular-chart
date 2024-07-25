@@ -9,6 +9,7 @@ This project demonstrates the usage of Angular with Angular Material, Tailwind C
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 - [Author](#author)
@@ -43,6 +44,40 @@ To run this project locally, follow these steps:
 ## Usage
 
 After following the installation steps, you can view the charts by navigating to different routes specified in the application (e.g., `/pie`, `/bar`, `/polar`, etc.).
+
+## Screenshots
+
+### Pie Chart
+
+![Pie Chart](screenshots/pie.jpg)
+
+### Bar Chart
+
+![Bar Chart](screenshots/bar.jpg)
+
+### Polar Area Chart
+
+![Polar Area Chart](screenshots/polar-area.jpg)
+
+### Radar Chart
+
+![Radar Chart](screenshots/radar.jpg)
+
+### Line Chart
+
+![Line Chart](screenshots/line.jpg)
+
+### Scatter Chart
+
+![Scatter Chart](screenshots/scatter.jpg)
+
+### Bubble Chart
+
+![Bubble Chart](screenshots/bubble.jpg)
+
+### Doughnut Chart
+
+![Doughnut Chart](screenshots/doughnut.jpg)
 
 ## Contributing
 
