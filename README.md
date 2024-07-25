@@ -49,35 +49,35 @@ After following the installation steps, you can view the charts by navigating to
 
 ### Pie Chart
 
-![Pie Chart](screenshots/pie.jpg)
+![Pie Chart](screenshots/pie.png)
 
 ### Bar Chart
 
-![Bar Chart](screenshots/bar.jpg)
+![Bar Chart](screenshots/bar.png)
 
 ### Polar Area Chart
 
-![Polar Area Chart](screenshots/polar-area.jpg)
+![Polar Area Chart](screenshots/polar-area.png)
 
 ### Radar Chart
 
-![Radar Chart](screenshots/radar.jpg)
+![Radar Chart](screenshots/radar.png)
 
 ### Line Chart
 
-![Line Chart](screenshots/line.jpg)
+![Line Chart](screenshots/line.png)
 
 ### Scatter Chart
 
-![Scatter Chart](screenshots/scatter.jpg)
+![Scatter Chart](screenshots/scatter.png)
 
 ### Bubble Chart
 
-![Bubble Chart](screenshots/bubble.jpg)
+![Bubble Chart](screenshots/bubble.png)
 
 ### Doughnut Chart
 
-![Doughnut Chart](screenshots/doughnut.jpg)
+![Doughnut Chart](screenshots/doughnut.png)
 
 ## Contributing
 
