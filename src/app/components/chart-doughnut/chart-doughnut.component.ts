@@ -3,13 +3,12 @@ import { Chart, registerables } from 'chart.js';
 import { ApiService } from '../../services/api.service';
 import { Sale } from '../../models/sale';
 Chart.register(...registerables);
-
 @Component({
-  selector: 'app-chart-bar',
-  templateUrl: './chart-bar.component.html',
-  styleUrl: './chart-bar.component.css',
+  selector: 'app-chart-doughnut',
+  templateUrl: './chart-doughnut.component.html',
+  styleUrl: './chart-doughnut.component.css',
 })
-export class ChartBarComponent implements OnInit {
+export class ChartDoughnutComponent implements OnInit {
   chartdata: Sale[] = [];
   labeldata: any[] = [];
   realdata: any[] = [];
@@ -31,8 +30,8 @@ export class ChartBarComponent implements OnInit {
           this.labeldata,
           this.realdata,
           this.colordata,
-          'barchart',
-          'bar'
+          'doughnutchart',
+          'doughnut'
         );
       }
     });

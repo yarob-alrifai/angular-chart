@@ -1,1 +1,24 @@
-<router-outlet></router-outlet>
+<div class="flex h-screen bg-gray-200">
+  <!-- Sidebar -->
+  <div class="w-64 bg-gray-800">
+    <div class="p-4 text-white">
+      <h1 class="text-lg font-bold mb-4">Menu</h1>
+      <ul>
+        <li><a routerLink="/pie" class="block text-white py-2">Pie Chart</a></li>
+        <li><a routerLink="/bar" class="block text-white py-2">Bar Chart</a></li>
+        <li><a routerLink="/polar" class="block text-white py-2">Polar Chart</a></li>
+        <li><a routerLink="/radar" class="block text-white py-2">Radar Chart</a></li>
+        <li><a routerLink="/line" class="block text-white py-2">Line Chart</a></li>
+        <li><a routerLink="/scatter" class="block text-white py-2">Scatter Chart</a></li>
+        <li><a routerLink="/bubble" class="block text-white py-2">Bubble Chart</a></li>
+        <li><a routerLink="/doughnut" class="block text-white py-2">Doughnut Chart</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="flex-1 p-4">
+
+    <router-outlet></router-outlet>
+  </div>
+</div>

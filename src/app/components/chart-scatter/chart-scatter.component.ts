@@ -3,13 +3,12 @@ import { Chart, registerables } from 'chart.js';
 import { ApiService } from '../../services/api.service';
 import { Sale } from '../../models/sale';
 Chart.register(...registerables);
-
 @Component({
-  selector: 'app-chart-bar',
-  templateUrl: './chart-bar.component.html',
-  styleUrl: './chart-bar.component.css',
+  selector: 'app-chart-scatter',
+  templateUrl: './chart-scatter.component.html',
+  styleUrl: './chart-scatter.component.css'
 })
-export class ChartBarComponent implements OnInit {
+export class ChartScatterComponent  implements OnInit {
   chartdata: Sale[] = [];
   labeldata: any[] = [];
   realdata: any[] = [];
@@ -31,8 +30,8 @@ export class ChartBarComponent implements OnInit {
           this.labeldata,
           this.realdata,
           this.colordata,
-          'barchart',
-          'bar'
+          'doughnutchart',
+          'scatter'
         );
       }
     });
@@ -48,12 +47,19 @@ export class ChartBarComponent implements OnInit {
     const myChart = new Chart(charId, {
       type: chartType,
       data: {
-        labels: labeldata,
+        // labels: labeldata,
         datasets: [
           {
             label: 'Sales',
-            data: realdata,
-            backgroundColor: colorCode,
+            data: [
+              { x: 20, y: 40, r: 60 },
+              { x: 30, y: 50, r: 10 },
+              { x: 20, y: 40, r: 30 },
+              { x: 60, y: 40, r: 30 },
+
+
+            ],
+             backgroundColor: ['red','green','blue','yellow']
           },
         ],
       },

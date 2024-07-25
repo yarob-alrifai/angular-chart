@@ -3,13 +3,13 @@ import { Chart, registerables } from 'chart.js';
 import { ApiService } from '../../services/api.service';
 import { Sale } from '../../models/sale';
 Chart.register(...registerables);
-
 @Component({
-  selector: 'app-chart-bar',
-  templateUrl: './chart-bar.component.html',
-  styleUrl: './chart-bar.component.css',
+  selector: 'app-chart-radar',
+  templateUrl: './chart-radar.component.html',
+  styleUrl: './chart-radar.component.css'
 })
-export class ChartBarComponent implements OnInit {
+export class ChartRadarComponent  implements OnInit {
+
   chartdata: Sale[] = [];
   labeldata: any[] = [];
   realdata: any[] = [];
@@ -27,39 +27,25 @@ export class ChartBarComponent implements OnInit {
           this.colordata.push(item.colorCode);
           this.realdata.push(item.amount);
         });
-        this.renderChart(
-          this.labeldata,
-          this.realdata,
-          this.colordata,
-          'barchart',
-          'bar'
-        );
+        this.renderChart(this.labeldata, this.realdata, this.colordata,'doughnutchart','radar');
       }
     });
   }
 
-  renderChart(
-    labeldata: number[],
-    realdata: number[],
-    colorCode: string[],
-    charId: string,
-    chartType: any
-  ) {
+  renderChart(labeldata: number[], realdata: number[], colorCode: string[],charId:string,chartType:any) {
     const myChart = new Chart(charId, {
       type: chartType,
       data: {
         labels: labeldata,
-        datasets: [
-          {
-            label: 'Sales',
-            data: realdata,
-            backgroundColor: colorCode,
-          },
-        ],
+        datasets: [{
+          label:'Sales',
+          data: realdata,
+           backgroundColor: colorCode }],
       },
       options: {
-        scales: { y: { beginAtZero: true } },
+        scales:{y:{beginAtZero:true}}
       },
     });
   }
+
 }
